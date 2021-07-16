@@ -2,7 +2,7 @@
 
 variable "region" {
   description = "The AWS region to create resources in."
-  default     = "us-west-1"
+  default     = "ap-south-1"
 }
 
 
@@ -27,7 +27,7 @@ variable "private_subnet_2_cidr" {
 variable "availability_zones" {
   description = "Availability zones"
   type        = list(string)
-  default     = ["us-west-1a", "us-west-1b"]
+  default     = ["ap-south-1a", "ap-south-1b"]
 }
 
 
@@ -48,7 +48,7 @@ variable "ecs_cluster_name" {
 variable "amis" {
   description = "Which AMI to spawn."
   default = {
-    us-west-1 = "ami-0667a9cc6a93f50fe"
+    us-west-1 = "ami-0ad704c126371a549"
   }
 }
 variable "instance_type" {
